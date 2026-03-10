@@ -1,0 +1,447 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+a{   text-decoration: none;
+   color: white;
+}
+ul{ list-style: none;}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-image: url(./images/overlay.png) ,url(./images/banner.jpg);
+    background-size: cover;
+    color: white;
+    height: 80vh;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+nav ul{
+    display: flex;
+    gap: 1.3rem
+}
+nav .MyOps a{
+    font-size:medium;
+    font-weight: 500px;
+    font-size: 18px;
+}
+nav .MyTitle a{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+section .hero{
+    text-align: center;
+    margin-top: 2rem;
+    width: 40%;
+    margin: 2rem auto;
+    
+}
+section .hero .icon{
+    border: 2px solid white;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;  
+}
+section .icon i{
+    transform: translate(0 , 1rem);
+}
+
+.hero .title h1 {
+ font-size: 2.6rem;
+    margin-top: 1.5rem;
+    text-decoration: overline wavy #fff 2px;
+
+}
+.hero .title p{
+    margin: 2rem 0;
+    font-size: larger;
+}
+
+.hero a{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 5rem;
+    padding: 0.8rem 1.6rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+#Services  {
+    padding: 6rem 0;
+   background-color: #EEEEEE;
+}
+
+#Services .row {
+    display: flex;
+    background-color: white;
+    margin: 0 auto 2rem auto;
+    width: 85%;
+    height: 330px;
+}
+
+#Services .col h2{
+    padding: 2rem 1rem 2rem 2rem ;
+    font-size: 35px;
+    
+}
+#Services .col p{
+    margin: 0 2rem 2rem;
+}
+#Services .col img{
+   width: 500px;
+    height: 100%;
+}
+#Services .col button{
+    margin: 0 2rem;
+    padding: 0.8rem;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.hero{
+    animation: FadeDownUp 2s;
+}
+
+#Services{
+    animation: FadeRightLeft 2s;
+}
+
+@keyframes FadeDownUp
+{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes FadeRightLeft
+{
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#About > div
+{
+    text-align: center;
+   
+}
+#About .row{
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+#About .col{
+    width: 25%;
+}
+#About .col img{
+   width: 100%;
+   height: 100%;
+   transition: all 0.5s;
+}
+
+#About .col img:hover{
+    
+   transform: scale(1.1);
+}
+
+#About h2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#About button {
+    margin: 2rem;
+    background-color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+#Contact {
+    text-align: center;
+    color: white;
+    background-color: #1E2832;
+    height: 70vh;
+}
+
+#Contact h2{
+    padding: 3rem 0 0.8rem 0;   
+}
+#Contact p{
+    padding-bottom:2rem;
+}
+.Info input{
+    width: 400px;
+    padding: 0.8rem;
+    background-color: #29333C;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#Contact textarea{
+    margin-top: 2rem;
+    width: 800px;
+    padding: 0.8rem;
+    background-color: #29333C;
+    outline: none;
+    border: none;
+    height: 25vh;
+    
+}
+#Contact button{
+    background-color: #29333C;
+    color: white;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80px;
+    font-size: large;
+}
+input{
+    color: white;
+}
+textarea{
+    color:white;
+}
+html {
+  scroll-behavior: smooth;
+}
+footer{
+    background-color: #1B2936;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    font-size: large;
+}
+
+
+/* Responsive design */
+
+@media (max-width : 1300px) {
+    section .hero{
+    text-align: center;
+    margin-top: 2rem;
+    width: 50%;
+    margin: 2rem auto;   
+}
+#Services .row {
+    display: flex;
+    background-color: white;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    height: 330px;
+}
+}
+@media (max-width : 1195px) {
+    section .hero{
+    text-align: center;
+    margin-top: 2rem;
+    width: 60%;
+    margin: 2rem auto;   
+}
+#Services .row {
+    display: flex;
+    background-color: white;
+    margin: 0 auto 2rem auto;
+    width: 110%;
+    height: 330px;
+}
+}
+@media (max-width : 1100px) {
+    .container{
+    width: 95%;
+    margin: 0 auto;
+}
+    header{
+    height: 60vh;
+}
+    #Services .row {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 auto 2rem auto;
+    width: 62.5%;
+    height: auto;
+}
+
+#Services .col p{
+    margin: 0 2rem 1rem;
+}
+#Services .col img{
+    width: 100%;
+    height: auto;  
+}
+#Services .col button{
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+}
+
+#Contact {
+    text-align: center;
+    color: white;
+    background-color: #1E2832;
+    height: 80vh;
+}
+#Contact .Info{
+    margin: auto;
+    width:75%;
+}
+.Info input{
+    width: 400px;   
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background-color: #29333C;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+#Contact textarea{
+    margin-top: 1rem;
+    width: 400px;
+    padding: 0.8rem;
+    background-color: #29333C;
+    outline: none;
+    border: none;
+    height: 25vh;
+    
+}
+}
+@media (max-width : 500px) {
+    section .hero{
+    text-align: center;
+    margin-top: 4rem;
+    width: 100%;
+     
+}
+    header{
+    height: 80vh;
+}
+nav .MyOps a{
+    font-weight: 500px;
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+    gap: 0.8rem
+}
+.hero .title h1 {
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+    text-decoration:   none;
+
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+#Services .row {
+    display: flex;
+    background-color: white;
+    margin: 0 auto 2rem auto;
+    width: 110%;
+    height: 330px;
+}
+#Services .row {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 auto 2rem auto;
+    width: 62.5%;
+    height: auto;
+}
+
+#Services .col p{
+    margin: 0 1rem 1rem;
+    font-size:medium;
+}
+#Services .col h2{
+   padding: 1rem;
+    font-size: larger;
+   
+}
+#Services .col button{
+    margin: 1rem 1rem;
+    padding: 0.5rem;
+}
+#Services .col img{
+    width: 100%;
+    height: auto;  
+}
+
+
+#Contact {
+    text-align: center;
+    color: white;
+    background-color: #1E2832;
+    height: 70vh;
+}
+
+.Info input{
+    width: 300px;   
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background-color: #29333C;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+#Contact textarea{
+    margin-top: 1rem;
+    width: 300px;
+    padding: 0.8rem;
+    background-color: #29333C;
+    outline: none;
+    border: none;
+    height: 25vh;
+    
+}
+footer{
+    padding: 1rem;
+}
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar { 
+    width: 8px;
+}
+::-webkit-scrollbar-track { 
+    background-color: white;
+}
+::-webkit-scrollbar-thumb { 
+    background-color: #817d7d;
+}
+::-webkit-scrollbar-thumb:hover { 
+    background-color: #2d2d2d;
+}
